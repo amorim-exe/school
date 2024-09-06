@@ -1,0 +1,117 @@
+/* Reset some default Bootstrap styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #010047;
+    color: #FFF;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+/* Logo */
+.logo {
+    width: 3.4rem;
+}
+
+/* Vídeo de fundo */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Seção Hero */
+.hero-section {
+    background-image: url('img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fundo escuro semi-transparente para maior contraste */
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/* Planos */
+.plan-card .price {
+    font-size: 2rem;
+    color: #004D99;
+    font-weight: bold;
+}
+
+.plan-card ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Rodapé */
+footer {
+    background-color: #004D99;
+}
+
+/* Ícones de características */
+.feature-icon {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+/* Membros da equipe */
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Depoimentos */
+.testimonial-item {
+    border-left: 3px solid #007bff;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.testimonial-item p {
+    font-style: italic;
+}
+
+/* Perguntas Frequentes */
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}

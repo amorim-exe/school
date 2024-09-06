@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/pay.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-5 text-white">Conclua Seu Pagamento</h2>
+        <div class="card mx-auto pagamento-card shadow-lg">
+            <div class="card-body">
+                <h4 class="card-title text-center mb-4">Escolha o Método de Pagamento</h4>
+                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="cartao-credito-tab" data-toggle="pill" href="#cartao-credito"
+                            role="tab" aria-controls="cartao-credito" aria-selected="true">
+                            <i class="fas fa-credit-card"></i> Cartão de Crédito
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pix-tab" data-toggle="pill" href="#pix" role="tab" aria-controls="pix"
+                            aria-selected="false">
+                            <i class="fas fa-qrcode"></i> Pix
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- Formulário de Pagamento com Cartão de Crédito -->
+                    <div class="tab-pane fade show active" id="cartao-credito" role="tabpanel"
+                        aria-labelledby="cartao-credito-tab">
+                        <div class="cartao-preview text-center">
+                            <div class="cartao-numero" id="cartao-numero-preview">#### #### #### ####</div>
+                            <div class="cartao-nome" id="cartao-nome-preview">NOME COMPLETO</div>
+                            <div class="cartao-validade" id="cartao-validade-preview">MM/AA</div>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label for="cartao-numero">Número do Cartão</label>
+                                <input type="text" class="form-control" id="cartao-numero" maxlength="16"
+                                    placeholder="1234 5678 9012 3456">
+                            </div>
+                            <div class="form-group">
+                                <label for="cartao-nome">Nome do Titular</label>
+                                <input type="text" class="form-control" id="cartao-nome" placeholder="João da Silva">
+                            </div>
+                            <div class="form-group">
+                                <label for="cartao-validade">Data de Validade</label>
+                                <input type="text" class="form-control" id="cartao-validade" maxlength="5"
+                                    placeholder="MM/AA">
+                            </div>
+                            <div class="form-group">
+                                <label for="cartao-cvc">CVC</label>
+                                <input type="text" class="form-control" id="cartao-cvc" maxlength="3" placeholder="123">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Pagar Agora</button>
+                        </form>
+                    </div>
+
+                    <!-- Método de Pagamento com Pix -->
+                    <div class="tab-pane fade" id="pix" role="tabpanel" aria-labelledby="pix-tab">
+                        <div class="text-center">
+                            <h5>Escaneie o QR Code para Pagar com Pix</h5>
+                            <img src="src/images/qrcode.png" alt="QR Code" class="qr-code my-4">
+                        </div>
+                        <button class="btn btn-success btn-block">Confirmar Pagamento</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/pay.js"></script>
+</body>
+
+</html>
