@@ -1,9 +1,7 @@
-/* Reset some default Bootstrap styles */
 body {
     font-family: 'Arial', sans-serif;
 }
 
-/* Navbar */
 .navbar {
     background-color: #010047;
     color: #FFF;
@@ -15,12 +13,10 @@ body {
     color: #fff !important;
 }
 
-/* Logo */
 .logo {
     width: 3.4rem;
 }
 
-/* Vídeo de fundo */
 .video-background {
     position: absolute;
     top: 0;
@@ -31,7 +27,6 @@ body {
     z-index: -1;
 }
 
-/* Seção Hero */
 .hero-section {
     background-image: url('img/hero-bg.jpg');
     background-size: cover;
@@ -42,7 +37,6 @@ body {
     align-items: center;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
-    /* Fundo escuro semi-transparente para maior contraste */
     position: relative;
     z-index: 1;
 }
@@ -60,7 +54,6 @@ body {
     color: white;
 }
 
-/* Planos */
 .plan-card .price {
     font-size: 2rem;
     color: #004D99;
@@ -72,18 +65,15 @@ body {
     list-style: none;
 }
 
-/* Rodapé */
 footer {
     background-color: #004D99;
 }
 
-/* Ícones de características */
 .feature-icon {
     font-size: 2rem;
     color: #007bff;
 }
 
-/* Membros da equipe */
 .team-member {
     text-align: center;
 }
@@ -95,7 +85,6 @@ footer {
     object-fit: cover;
 }
 
-/* Depoimentos */
 .testimonial-item {
     border-left: 3px solid #007bff;
     padding-left: 15px;
@@ -106,7 +95,6 @@ footer {
     font-style: italic;
 }
 
-/* Perguntas Frequentes */
 .faq-item {
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
