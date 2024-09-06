@@ -5,14 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato - Escola de Idiomas</title>
+  <link rel="icon" href="src/images/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
-
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -39,14 +38,12 @@
     </div>
   </nav>
 
-  <!-- Seção de Contato -->
   <section class="contact-section">
     <div class="container">
       <h2>Fale Conosco</h2>
       <div class="row justify-content-center">
-        <!-- Formulário de contato -->
         <div class="col-md-6">
-          <form class="contact-form">
+          <form class="contact-form" id="contactForm">
             <div class="form-group">
               <label for="name">Nome</label>
               <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
@@ -61,10 +58,11 @@
             </div>
             <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
           </form>
+          <div id="successMessage" class="alert alert-success mt-3 d-none">
+            Sua mensagem foi enviada com sucesso! Redirecionando para a página inicial...
+          </div>
         </div>
       </div>
-
-      <!-- Informações de contato e mapa -->
       <div class="row mt-5">
         <div class="col-md-6">
           <ul class="contact-info">
@@ -88,8 +86,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Rodapé -->
   <footer>
     <p>&copy; 2024 Escola de Idiomas. Todos os direitos reservados.</p>
   </footer>
@@ -97,6 +93,14 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      document.getElementById('successMessage').classList.remove('d-none');
+      setTimeout(function () {
+        window.location.href = 'index.html';
+      }, 3000);
+    });
+  </script>
 </body>
-
 </html>

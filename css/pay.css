@@ -1,6 +1,22 @@
 body {
     font-family: 'Arial', sans-serif;
+    /* background-color: #010047; */
+}
+
+.navbar {
     background-color: #010047;
+    color: #FFF;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+/* Logo */
+.logo {
+    width: 3.4rem;
 }
 
 .pagamento-card {
@@ -36,9 +52,9 @@ body {
     right: 20px;
 }
 
-body {
+/* body {
     background-color: #010047;
-}
+} */
 
 .pagamento-card {
     max-width: 500px;
@@ -89,18 +105,6 @@ body {
     background-color: #218838;
 }
 
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
 .qr-code {
     display: inline-block;
     max-width: 200px;
@@ -109,19 +113,6 @@ body {
     animation: pulse 2s infinite;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
 
 .btn-block {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
